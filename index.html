@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="shortcut icon" href="assets/img/logo pizzaria.png" type="image/x-icon">
+  <title>Pizzaria</title>
+</head>
+<body>
+  <header data-aos="fade-down" data-aos-duration="1000">
+    <div class="container-header">
+      <a href="#inicio"><img src="assets/img/logo pizzaria.png" alt="Pizzaria" class="logo-header"></a>
+      
+
+      <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contatos</a></li>
+          <li><a href="#pedidos" class="cta">Pedir Agora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--home-->
+    <section class="inicio" id="inicio" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+      <div class="passo" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1200">
+        <div class="icone">🕘</div>
+        <h3>Você pede</h3>
+        <p>Escolha sua pizza favorita com poucos cliques.</p>
+      </div>
+      <div class="passo" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1200">
+        <div class="icone">🍕</div>
+        <h3>Nós preparamos</h3>
+        <p>Com ingredientes frescos e receita artesanal.</p>
+      </div>
+
+      <div class="passo" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1200">
+        <div class="icone">🏍️</div>
+        <h3>Entregamos rapidinho</h3>
+        <p>Chega quentinha na sua porta em minutos.</p>
+      </div>
+    </section>
+
+    <!--cardapio-->
+    <section class="cardapio" id="cardapio">
+      <h2>Cardápio</h2>
+      <p class="info-tamanho">
+        <strong>Valores por tamanho</strong>
+        <br> P: R$ 40,00 (sem borda) / R$ 48,00 (com borda)
+        <br> M: R$ 50,00 (sem borda) / R$ 58,00 (com borda)
+        <br> G: R$ 60,00 (sem borda) / R$ 68,00 (com borda)
+      </p>
+      <div class="grupo">
+        <h3>Salgadas Tradicionais</h3>
+        <ul class="lista-pizzas">
+          <li>
+            <span class="nome">Calabresa</span>
+            <span class="descricao">Calabresa fatiada, cebola roxa, azeitona, mussarela</span>
+          </li>
+          <li>
+            <span class="nome">Portuguesa</span>
+            <span class="descricao">Presunto, ovo, cebola, pimentão, ervilha, mussarela</span>
+          </li>
+          <li>
+            <span class="nome">Marguerita</span>
+            <span class="descricao">Molho de tomate, mussarela, tomate em rodelas, manjericão</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grupo">
+        <h3>Salgadas Especiais</h3>
+        <ul class="lista-pizzas">
+          <li>
+            <span class="nome">Frango com Catupiry</span>
+            <span class="descricao">Frango desfiado, catupiry original, milho e orégano</span>
+          </li>
+          <li>
+            <span class="nome">Quatro Queijos</span>
+            <span class="descricao">Mussarela, provolone, gorgonzola e parmesão</span>
+          </li>
+          <li>
+            <span class="nome">Picanha</span>
+            <span class="descricao">Tiras de picanha, cebola caramelizada, mussarela</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grupo">
+        <h3>Doces</h3>
+        <ul class="lista-pizzas">
+          <li>
+            <span class="nome">Chocolate com Morango</span>
+            <span class="descricao">Brigadeiro, morango fresco, leite condensado</span>
+          </li>
+          <li>
+            <span class="nome">Romeu e Julieta</span>
+            <span class="descricao">Mussarela com goiabada cremosa</span>
+          </li>
+          <li>
+            <span class="nome">Banana com Canela</span>
+            <span class="descricao">Banana, açúcar, canela e leite condensado</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--sobre-->
+    <section class="sobre" id="sobre">
+      <div class="texto-sobre">
+        <h2 class="titulo-sobre">Sobre a Pizzaria</h2>
+        <p>
+            Desde 2005, a Pizzaria Bella Massa entrega sabor, tradição e qualidade. 
+            Com forno a lenha, ingredientes frescos e aquele toque especial da casa, 
+            cada pizza é feita com amor para você.
+        </p>  
+      </div>
+
+      <h2 class="titulo-diferenciais">Diferenciais da nossa Pizzaria</h2>
+      <ul class="diferenciais-sobre">
+        <li><span>🍕</span> Pizzas artesanais</li>
+        <li><span>🔥</span> Forno à lenha de verdade</li>
+        <li><span>🛵</span> Entrega rápida e segura</li>
+        <li><span>🌿</span> Ingredientes naturais e selecionados</li>
+      </ul>
+
+      <div class="galeria">
+        <div class="img-wrapper">
+          <img src="assets/img/externo-sobre-pizzaria.png" alt="Espaço Exterior Pizzaria">
+        </div>
+        <div class="img-wrapper">
+           <img src="assets/img/interno-sobre-pizzaria.png" alt="Espaço Interno Pizzaria">
+        </div>
+        <div class="img-wrapper">
+          <img src="assets/img/forno-sobre-pizzaria.png" alt="Forno Pizzaria">
+        </div>
+        <div class="img-wrapper">
+          <img src="assets/img/pizza-sobre-pizzaria.png" alt="Pizza">
+        </div>
+       
+      </div>
+    </section>
+  </main>
+
+
+  <script src="js/script.js"></script>
+  <script>
+  AOS.init();
+  </script>
+</body>
+</html>
