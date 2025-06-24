@@ -39,4 +39,4 @@ Você pode:
 - Ou publicar no GitHub Pages (recomendado para demonstrar online).
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
+git clone https://marlonschulze.github.io/pizzaria/
