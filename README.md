@@ -28,7 +28,10 @@ A **Pizzaria** é um site totalmente responsivo, criado com HTML, CSS e JavaScri
 
 ## 🖼️ Imagens
 
-Todas as imagens foram criadas ou extraídas do Canva gratuito, de acordo com os termos de uso da plataforma, para fins de portfólio.
+Imagens de layout e ilustrações retiradas do Canva (modo gratuito)
+Logo criada utilizando o Ideogram
+Fundo das imagens removido com o Remove.bg
+Textos e ideias geradas com o auxílio do ChatGPT (OpenAI)
 
 ---
 
