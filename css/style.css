@@ -122,6 +122,11 @@ header .container-header {
   right: 0;
 }
 
+.menu a.ativo {
+  color: var(--destaque);
+  font-weight: bold;
+}
+
 .menu-hamburguer.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -209,6 +214,13 @@ header .container-header {
   z-index: 1;
 }
 
+.passo-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1;
+}
+
 .passo {
   position: relative;
   text-align: center;
@@ -243,14 +255,37 @@ header .container-header {
   line-height: 1.5;
 }
 
+.btn-hero {
+  z-index: 1;
+  margin-top: 1.4rem;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--vermelho);
+  color: var(--texto-claro);
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-hero:hover {
+  background-color: var(--destaque);
+  color: var(--fundo-header);
+  transform: scale(1.05);
+}
+
 @media(min-width: 768px) {
   .inicio {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
     padding: 6rem 2rem;
     height: 100%;
+  }
+
+  .passo-wrapper{
+    flex-direction: row;
   }
 
   .passo {
@@ -465,5 +500,67 @@ header .container-header {
     width: 310px;
     height: 200px;
     flex-shrink: 0;
+  }
+}
+
+/*contatos*/
+.contatos {
+  padding: 2rem 1rem;
+  background-color: var(--fundo-header);
+  color: var(--texto-claro);
+  text-align: center;
+  min-height: 400px;
+  scroll-margin-top: 100px;
+}
+
+.contatos h2 {
+  font-size: 2rem;
+  color: var(--destaque);
+}
+
+.contatos p {
+  margin-bottom: 1.7rem;
+  font-size: 1rem;
+}
+
+.info-contato {
+    display: grid;
+    gap: 2rem;
+}
+
+.info-contato .item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 1rem;
+}
+
+.btn-contato {
+  display: inline-block;
+  padding: 0.75rem 1.0rem;
+  margin-top: 1.4rem;
+  background-color: var(--vermelho);
+  color: var(--texto-claro);
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contato:hover {
+  background-color: var(--destaque);
+  color: var(--fundo-header);
+}
+
+@media(min-width: 768px) {
+  .info-contato {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contatos p{
+    font-size: 1.1rem;
   }
 }
