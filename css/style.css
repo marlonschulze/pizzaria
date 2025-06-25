@@ -348,36 +348,38 @@ header .container-header {
 .sobre {
   padding: 2rem 1rem;
   background-color: var(--fundo-body);
-  color: var(--cor-texto);
+  color: var(--texto-claro);
   text-align: center;
   border-top: 3px solid var(--fundo-header);
   border-bottom: 3px solid var(--fundo-header);
+  background-color: var(--fundo-header);
 }
 
 .sobre .titulo-sobre {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--fundo-header);
+  color: var(--texto-claro);
 }
 
 .sobre p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
   max-width: 600px;
   margin-inline: auto;
 }
 
 .sobre .diferenciais-sobre {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
-  background-color: var(--fundo-body);
-  color: var(--cor-texto);
+  color: var(--texto-claro);
+  padding-bottom: 2rem;
 }
 
 .titulo-diferenciais{
   font-size: 1.4rem;
-  color: var(--fundo-header);
+  color: var(--destaque);
+  margin-bottom: 1px;
 }
 
 .diferenciais-sobre ul{
@@ -387,7 +389,7 @@ header .container-header {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .diferenciais-sobre li{
@@ -412,6 +414,7 @@ header .container-header {
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 5px solid var(--texto-claro);
 }
 
 .img-wrapper::after {
@@ -427,8 +430,8 @@ header .container-header {
   background-color: rgba(255, 255, 255, 0.3); /* efeito branco claro */
 }
 
-.img-wrapper:hover{
-  transform: scale(1.03);
+.img-wrapper:hover img{
+  transform: scale(1.03) translateY(4px);
 }
 
 .img-wrapper img {
@@ -438,7 +441,9 @@ header .container-header {
   object-fit: cover;
   transition: transform 0.3s ease;
   z-index: 1;
+  border-radius: 0.5rem;
 }
+
 
 /* Responsivo: Desktop */
 @media (min-width: 768px) {
